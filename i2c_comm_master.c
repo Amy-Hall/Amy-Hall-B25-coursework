@@ -421,7 +421,7 @@ int main(void)
     {
 	//Get x data
 	    xdata = (read(0x01) <<8)|read(0x02);  //takes values from two 8 bit registers to give one 16 bit variable
-	//determine if data is postive or negative, and if negative convert to positive equivelent since only interested in value (2's compliment). (record if positive or negative as my be useful later
+	//determine if data is postive or negative, and if negative convert to positive equivelent since only interested in value (2's compliment). (record if positive or negative as my be useful later)
 	    if (xdata > 0x7FFF)                   
 	    {
 		xsign = '-';
